@@ -1,0 +1,5 @@
+
+[squid:S1155 ">Use isEmpty() to check whether the collection is empty or not.(ûÕ¢#8å†¯§Ž-
+isquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(¸ÚÞ…8Ú†â½”-
+Ø%squid:RedundantThrowsDeclarationCheck"šRemove the declaration of thrown exception 'org.springframework.security.authentication.InsufficientAuthenticationException' which is a runtime exception.(›½ÿ½üÿÿÿÿ8Œ­§Ž-
+Â%squid:RedundantThrowsDeclarationCheck"„Remove the declaration of thrown exception 'org.springframework.security.access.AccessDeniedException' which is a runtime exception.(›½ÿ½üÿÿÿÿ8Œ­§Ž-

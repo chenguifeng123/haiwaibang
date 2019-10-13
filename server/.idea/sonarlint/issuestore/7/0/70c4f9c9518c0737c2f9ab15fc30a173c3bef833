@@ -1,0 +1,5 @@
+
+Hsquid:S3457!"%String contains no format specifiers.(ÿÛÁ–ûÿÿÿÿ8Ú±ğˆ-
+msquid:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ãèïûÿÿÿÿ8Ú±ğˆ-
+ssquid:S2068"U'PASSWORD' detected in this expression, review this potentially hardcoded credential.(‹íÌá8Ú±ğˆ-
+ksquid:S44880"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ïşÒÊûÿÿÿÿ8Ú±ğˆ-

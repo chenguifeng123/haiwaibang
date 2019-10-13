@@ -1,0 +1,3 @@
+security:
+  basic:
+    path: /resource/**

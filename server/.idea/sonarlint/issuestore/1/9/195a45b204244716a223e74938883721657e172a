@@ -1,0 +1,7 @@
+
+osquid:S1602o"SRemove useless curly braces around statement and then remove useless return keyword(¾ô…™üÿÿÿÿ
+jsquid:S1602f"SRemove useless curly braces around statement and then remove useless return keyword(øúŒİ
+Zsquid:S1155b">Use isEmpty() to check whether the collection is empty or not.(ÑàÃØşÿÿÿÿ
+@squid:S2786")Remove this redundant "static" qualifier.(†ÈÑ´
+Zsquid:S1155F">Use isEmpty() to check whether the collection is empty or not.(ÑàÃØşÿÿÿÿ
+jsquid:S1602J"SRemove useless curly braces around statement and then remove useless return keyword(øúŒİ

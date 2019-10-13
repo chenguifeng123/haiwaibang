@@ -1,0 +1,6 @@
+
+Isquid:S1168I"+Return an empty collection instead of null.(¥¹ï8µêİĞ-
+asquid:S1155(">Use isEmpty() to check whether the collection is empty or not.(µç‚Àûÿÿÿÿ8òå“¼”-
+ª%squid:RedundantThrowsDeclarationCheck6"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ó¢œûÿÿÿÿ8µêİĞ-
+Osquid:S1602.",Remove useless curly braces around statement(òÕ÷¾ûÿÿÿÿ8‘æÁ“-
+Isquid:S1168E"+Return an empty collection instead of null.(¥¹ï8ÿ×Ã“-

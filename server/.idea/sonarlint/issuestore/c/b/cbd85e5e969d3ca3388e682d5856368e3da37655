@@ -1,0 +1,6 @@
+
+Csquid:S3599/",Use another way to initialize this instance.(¦—Ù‰
+dsquid:S4488("HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ž–û‚ùÿÿÿÿ
+dsquid:S44887"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(°¢ÆŸúÿÿÿÿ
+_squid:S4488?"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(°„ìÍ
+psquid:S1171/"YMove the contents of this initializer to a standard constructor or to field initializers.(¦—Ù‰

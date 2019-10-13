@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haiwaibang.server.dao.multi.ComplexRolePermissionMapper" >
+  <resultMap id="complexPermissionMap" type="com.haiwaibang.model.po.multi.ComplexRolePermission" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="role_name" property="roleName" jdbcType="VARCHAR" />
+    <collection property="sysPermissions" ofType="com.haiwaibang.model.po.SysPermission" javaType="java.util.List">
+      <id column="permission_id" property="id" jdbcType="INTEGER" />
+      <result column="permission_name" property="name" jdbcType="VARCHAR" />
+      <result column="url" property="url" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <sql id="complexRolePermission">
+    select a.id as id, a.name as role_name, c.id as permission_id, c.name as permission_name, url
+    from sys_role a, sys_permission_role b, sys_permission c
+    where a.id = b.role_id and c.id = b.permission_id
+  </sql>
+
+  <select id="listComplexRolePermission" resultMap="complexPermissionMap">
+    <include refid="complexRolePermission" />
+  </select>
+
+  <select id="getPermissionByRoleId" resultMap="complexPermissionMap">
+    <include refid="complexRolePermission" />
+    and a.id = #{roleId}
+  </select>
+
+  <select id="getPermissionByRoleName" resultMap="complexPermissionMap">
+    <include refid="complexRolePermission" />
+    and a.name = #{roleName}
+  </select>
+
+  <select id="getRolePermissionByUrl" resultMap="complexPermissionMap">
+    <include refid="complexRolePermission" />
+    and url = #{url}
+  </select>
+
+  <resultMap id="complexPermissionRoleMap" type="com.haiwaibang.model.po.multi.ComplexPermissionRole" >
+    <id column="permission_id" property="id" jdbcType="INTEGER" />
+    <result column="permission_name" property="name" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <collection property="sysRoles" ofType="com.haiwaibang.model.po.SysRole" javaType="java.util.List">
+      <id column="id" property="id" jdbcType="INTEGER" />
+      <result column="role_name" property="name" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <select id="listComplexPermissionRole" resultMap="complexPermissionRoleMap">
+    <include refid="complexRolePermission" />
+  </select>
+
+  <select id="getPermissionRoleByUrl" resultMap="complexPermissionRoleMap">
+    <include refid="complexRolePermission" />
+    and url = #{url}
+  </select>
+</mapper>

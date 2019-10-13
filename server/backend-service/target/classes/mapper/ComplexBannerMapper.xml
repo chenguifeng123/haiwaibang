@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haiwaibang.server.dao.multi.ComplexBannerMapper" >
+  <resultMap id="banner" type="com.haiwaibang.model.po.multi.ComplexBanner" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="image_id" property="imageId" jdbcType="INTEGER" />
+    <result column="attach_id" jdbcType="INTEGER" property="attachId" />
+    <result column="attach_type" jdbcType="INTEGER" property="attachType" />
+    <result column="show_type" property="showType" jdbcType="INTEGER" />
+    <result column="bannerUrl" property="url" jdbcType="VARCHAR" />
+    <result column="sortid" property="sortid" jdbcType="INTEGER" />
+    <association property="image" javaType="com.haiwaibang.model.po.Image">
+      <id column="image_id" property="id" jdbcType="INTEGER" />
+      <result column="imageName" property="name" jdbcType="VARCHAR" />
+      <result column="imageUrl" property="url" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <select id="listBanner" resultMap="banner">
+    select a.id, a.name , title, image_id, attach_id, attach_type, show_type, a.url as bannerUrl, sortid, b.name as imageName,
+    b.url as imageUrl
+     from banner a, image b
+     where a.image_id = b.id
+    <if test="_parameter != null" >
+      and show_type = #{showType,jdbcType=INTEGER}
+    </if>
+
+  </select>
+
+</mapper>

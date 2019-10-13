@@ -1,0 +1,5 @@
+
+Csquid:S1481")Remove this unused "list" local variable.(¢à›ıÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ÓÇªüÿÿÿÿ
+Rsquid:S1854"8Remove this useless assignment to local variable "list".(¢à›ıÿÿÿÿ

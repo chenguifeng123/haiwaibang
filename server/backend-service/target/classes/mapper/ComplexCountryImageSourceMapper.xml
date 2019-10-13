@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haiwaibang.server.dao.multi.ComplexCountryImageSourceMapper" >
+  <resultMap id="imageSource" type="com.haiwaibang.model.po.multi.ComplexCountryImageSource" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="country_id" property="countryId" jdbcType="INTEGER" />
+    <result column="image_id" property="imageId" jdbcType="INTEGER" />
+    <result column="show_type" property="showType" jdbcType="INTEGER" />
+    <association property="image" javaType="com.haiwaibang.model.po.Image">
+      <id column="image_id" property="id" jdbcType="INTEGER" />
+      <result column="image_name" property="name" jdbcType="VARCHAR" />
+      <result column="url" property="url" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <select id="listComplexCountryImageSource" resultMap="imageSource">
+    select a.id, a.name, country_id, image_id, show_type, b.name as image_name, url
+      from country_image_source a, image b
+    where a.image_id = b.id and a.country_id = #{countryId}
+    <if test="_parameter != null" >
+      and show_type = #{showType,jdbcType=INTEGER}
+    </if>
+  </select>
+</mapper>

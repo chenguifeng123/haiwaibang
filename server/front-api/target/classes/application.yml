@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: haiwaibang
+  profiles:
+    active: front,db,dev,security

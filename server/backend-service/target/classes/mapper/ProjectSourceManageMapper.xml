@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haiwaibang.server.dao.ProjectSourceManageMapper" >
+
+  <resultMap type="com.haiwaibang.model.po.multi.CountryProjectTree" id="projectTree">
+    <id column="continent_id" property="id"/>
+    <result column="continent_name" property="name"/>
+    <result column="sleaf" property="leaf"/>
+    <collection property="children" ofType="com.haiwaibang.model.po.multi.CountryProjectTree" javaType="java.util.List">
+      <id column="cid" property="id" jdbcType="INTEGER" />
+      <result column="cname" property="name" jdbcType="VARCHAR" />
+      <result column="cleaf" property="leaf"/>
+      <collection property="children" ofType="com.haiwaibang.model.po.multi.CountryProjectTree" javaType="java.util.List" notNullColumn="pid">
+        <id column="pid" property="id" jdbcType="INTEGER" />
+        <result column="pname" property="name" jdbcType="VARCHAR" />
+        <result column="pleaf" property="leaf"/>
+      </collection>
+    </collection>
+  </resultMap>
+  <select id="getCountryProjectTree" resultMap="projectTree">
+    select c.id as cid, c.name_zh as cname, 0 as cleaf, continent_id, continent_name, 0 as sleaf,
+      p.id as pid, p.name_zh as pname, 1 as pleaf
+    from country c left join project p on c.id = p.country_id
+  </select>
+
+  <resultMap type="com.haiwaibang.model.po.multi.CountryProjectTree" id="countryTree">
+    <id column="continent_id" property="id"/>
+    <result column="continent_name" property="name"/>
+    <result column="sleaf" property="leaf"/>
+    <collection property="children" ofType="com.haiwaibang.model.po.multi.CountryProjectTree" javaType="java.util.List">
+      <id column="id" property="id" jdbcType="INTEGER" />
+      <result column="name_zh" property="name" jdbcType="VARCHAR" />
+      <result column="cleaf" property="leaf"/>
+      </collection>
+  </resultMap>
+
+  <select id="getCountryTree" resultMap="countryTree">
+    select id, name, name_zh, 1 as cleaf, continent_id, continent_name, 0 as sleaf from country
+  </select>
+
+</mapper>

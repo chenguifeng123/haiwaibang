@@ -1,0 +1,343 @@
+/* 特点部分 */
+.trait-container{
+    margin-top: 20px;
+}
+
+.title_top{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.title_top .title{
+    width: 1180px;
+    margin: 0 auto;
+}
+.title_top span{
+    display: inline-block;
+    font-size: 24px;
+    color: #ccc;
+    padding: 9px 10px;
+    border: 1px #ccc solid;
+}
+.title_top h3{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #008cee;
+    line-height: 42px;
+    margin-left: 10px;
+}
+.title_top h3 a{
+    color: #008cee;
+}
+.title_top i{
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 42px;
+    margin-left: 10px;
+}
+
+.trait{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pic1 li{
+    width: 380px;
+    float: left;
+    margin-top: 98px;
+    margin-right: 20px;
+    height: 180px;
+    position: relative;
+}
+.pic1 li:nth-child(3n){
+    margin-right: 0;
+}
+.pic1 li h3{
+    width: 120px;
+    height: 120px;
+    background:url(/img/yuli.png) no-repeat;
+    line-height: 120px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    position: absolute;
+    left: 130px;
+    top:-60px;
+}
+.pic1 li .lim{
+    height: 180px;
+    background-color: #f0f0f0;
+    padding-top: 60px;
+}
+.pic1 li .lim p{
+    text-align: center;
+    font-size: 20px;
+    color: #008cee;
+    line-height: 50px;
+    height: 50px;
+}
+.pic1 li .lim span{
+    font-size: 14px;
+    color: #666;
+    margin: 0 38px;
+    display: block;
+}
+.pic1{
+    overflow: hidden;
+}
+
+/* 热门国家 */
+
+
+.index-common_title {
+    font-size: 36px;
+    color: #444;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.index-common_title_desc {
+    margin: 10px 0 40px 0;
+    font-size: 16px;
+    color: #988d67;
+}
+
+.relative {
+    position: relative;
+}
+
+.index_project_icon {
+    width: 46px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -8px -50px 0 0;
+}
+
+.inblock {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 面板 */
+
+.hot-country-center, .hot-project-center{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hot-project-center {
+    background: #eeeeee;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.panel{
+    display: inline-block;
+    width: 30%;
+}
+
+/* 资讯 */
+
+.artile-part {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ptitle {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.ptitle p {
+    float: right;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.element-content{
+    padding: 10px;
+    background-color: #f7f7f7;
+    /* background-color: #d6dfef; */
+    margin-bottom: 10px;
+}
+
+.element-content img{
+    width: 320px;
+    height: 220px;
+}
+
+.element-content-panel{
+    margin-left: 10px;
+}
+
+.element-title a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #a94442;
+
+}
+
+.element-sub-title {
+    color:#acabab;
+    text-indent: 15px;
+}
+
+.element-content-desc{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 3; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+}
+
+.artile-part li {
+    line-height: 30px;
+    padding-left: 15px;
+}
+
+.artile-part li samp {
+    float: right;
+}
+
+.recommend h3 {
+    border-bottom: 5px solid rgb(36, 36, 36);
+    line-height: 45px;
+}
+
+.recommend ul{
+    padding: 0;
+}
+
+.recommend ul li {
+    line-height: 30px;
+    height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.artile-part li {
+    margin: 0;
+    /* padding: 0; */
+    list-style: none;
+}
+
+.recommend ul li span.num {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #b7b7b7;
+    margin-right: 5px;
+}
+
+.recommend ul li span {
+    display: block;
+    float: left;
+}
+
+.recommend ul li span.active {
+    background-color: #18608c;
+}
+
+.user-contact{
+    text-align: center;
+    background-color: #eeeeee;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.user-contact .form-inline{
+    margin: 15px auto;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.user-contact .form-group{
+    margin-right: 50px;
+}
+
+.form-group select, input{
+    width: 154px;
+    height: 36px;
+    margin: 0 auto;
+    margin-right: 10px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.form-inline .form-title{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.form-inline .form-title span{
+    color: #c00310;
+    font-weight: bold;
+}
+
+.form-inline button{
+    color: #fff;
+    background-color: #de977b;
+    border-color: #daaf58;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    width: 160px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.links{
+    margin: 20px;
+    padding: 15px;
+}
+
+.ylinks-head {
+    font-size: 26px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.ylinks li {
+    /* float: left; */
+    line-height: 50px;
+    margin-right: 25px;
+    display: inline-block;
+}

@@ -1,0 +1,5 @@
+
+nsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(š¶¤Ýüÿÿÿÿ8”Èá¼‰-
+isquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(Õçáå8Õ‚¸”Š-
+Osquid:S1602F",Remove useless curly braces around statement(–Ò ‹úÿÿÿÿ8¾íä¾Š-
+½%squid:RedundantThrowsDeclarationCheck*"„Remove the declaration of thrown exception 'org.springframework.security.core.AuthenticationException' which is a runtime exception.(ïÁ8˜  ”‰-

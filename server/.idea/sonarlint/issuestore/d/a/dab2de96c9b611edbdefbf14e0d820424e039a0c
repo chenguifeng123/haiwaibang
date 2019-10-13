@@ -1,0 +1,19 @@
+
+asquid:HiddenFieldCheck ">Rename "jsonConfig" which hides the field declared at line 24.(ŸœÁ³
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢›ºÑ
+P"squid:SwitchLastCaseIsDefaultCheckT""Add a default case to this switch.(ÜŸ•
+lsquid:S2095¿"OUse try-with-resources or close this "InputStreamReader" in a "finally" clause.(ôˆĞÿÿÿÿÿ
+bsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(«ÕÙ—
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(’ıµ
+Esquid:S1068"/Remove this unused "contextPath" private field.(„áv
+®%squid:RedundantThrowsDeclarationCheck!"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(Éöú”şÿÿÿÿ
+Fsquid:S1172!"*Remove this unused method parameter "uri".(Éöú”şÿÿÿÿ
+jsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ÎÅ½˜
+psquid:S1192-"TUse already-defined constant 'configFileName' instead of duplicating its value here.(£æŸùÿÿÿÿ
+ª%squid:RedundantThrowsDeclarationCheck“"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(áŸ‘‘
+asquid:S1192Z"JDefine a constant instead of duplicating this literal "fieldName" 5 times.(Û¾±Š
+dsquid:S2095À"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Úú’Ÿ
+`squid:S1192W"IDefine a constant instead of duplicating this literal "isBase64" 3 times.(ÚìÅ
+dsquid:S1192X"HDefine a constant instead of duplicating this literal "maxSize" 5 times.(¹Â±Øúÿÿÿÿ
+usquid:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ì¥–‰ùÿÿÿÿ
+bsquid:S1192Y"KDefine a constant instead of duplicating this literal "allowFiles" 6 times.(ê¤Ù

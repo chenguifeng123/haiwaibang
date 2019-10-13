@@ -1,0 +1,43 @@
+.title-image, .contact-image{
+    text-align: center;
+}
+
+.about-title {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.about-title h2 {
+    text-align: center;
+    color: #c00310;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    display: block;
+}
+
+.about-title i.line-left {
+    left: 150px;
+}
+
+.about-title i.line-right {
+    right: 150px;
+}
+
+.about-title i {
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    background: #a1a1a1;
+    top: 30px;
+}
+
+.intro-content{
+    margin: auto 20px;
+}
+
+.contact-us{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

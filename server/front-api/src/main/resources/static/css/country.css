@@ -1,0 +1,95 @@
+.countryProjectContrast .project-section_title {
+    margin-bottom: 30px;
+}
+
+.project-section_title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #525252;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.countryProjectContrast-list {
+    overflow: hidden;
+    max-height: 634px;
+    padding: 10px 10px 0;
+}
+
+.countryProjectContrast-list_view {
+    float: left;
+    width: 395px;
+    height: 295px;
+    margin-right: 7px;
+    margin-bottom: 22px;
+    background-color: #fff;
+    transition: all .4s;
+    -webkit-box-shadow: 0 5px 30px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 5px 30px rgba(0,0,0,.1);
+    -o-box-shadow: 0 5px 30px rgba(0,0,0,.1);
+    box-shadow: 0 5px 30px rgba(0,0,0,.1);
+}
+
+.countryProjectContrast-list_view .projectType {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background-color: #343e83;
+}
+
+.countryProjectContrast-list_view .title {
+    font-size: 18px;
+    color: #151515;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+
+.countryProjectContrast-list_view .desc:first-of-type {
+    margin-bottom: 10px;
+}
+
+.countryProjectContrast-list_view .desc span:first-child {
+    text-align: left;
+    margin-right: 20px;
+}
+
+.countryProjectContrast-list_view .desc span {
+    font-size: 14px;
+    color: #7e7e7e;
+    display: inline-block;
+    /* width: 160px; */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.countryProjectContrast-list_view .desc {
+    padding: 5px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.countryProjectContrast-list_view .btnGroup {
+    text-align: center;
+}
+
+.countryProjectContrast-list_view .btnGroup a {
+    margin-right: 26px;
+}
+
+.countryProjectContrast-list_view .btnGroup a, .countryProjectContrast-list_view .btnGroup button {
+    display: inline-block;
+    width: 98px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border: 1px solid #040000;
+    color: #4e4e4e;
+    text-align: center;
+}
+

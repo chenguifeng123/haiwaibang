@@ -1,0 +1,41 @@
+
+tsquid:S3973Œ"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Ô§Ä„üÿÿÿÿ
+jsquid:S00117Á"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¯ø”
+osquid:S00117Ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üš‰üÿÿÿÿ
+Isquid:S2692®"10 is a valid index, but is ignored by this check.(¹ãî®
+osquid:S00117Ä"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦ÍÅõûÿÿÿÿ
+9squid:S1643Í"Use a StringBuilder instead.(ÿ¬›˜ıÿÿÿÿ
+vsquid:S2293¬"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ·Ğîúÿÿÿÿ
+jsquid:S00117Å"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œíÃ
+^squid:S3027®"FPut single-quotes around '=' to use the faster "indexOf(char)" method.(¹ãî®
+isquid:S00117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëå©|
+hsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(Ã¾§Ìÿÿÿÿÿ
+osquid:S00117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ä¥ÿÿÿÿÿ
+wsquid:S1149Ú"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
+2squid:S3626|"Remove this redundant jump.(ÉŠ©ƒ
+vsquid:S1488µ"^Immediately return this expression instead of assigning it to the temporary variable "answer".(ûò„ï
+Usquid:S1197«"8Move the array designator from the variable to the type.(¯¬“Ïøÿÿÿÿ
+qsquid:S2293ò"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃûüÓ
+Bsquid:S00108µ")Either remove or fill this block of code.(å¥‡
+8squid:S1643,"Use a StringBuilder instead.(æÚË–şÿÿÿÿ
+Csquid:S1452ñ"&Remove usage of generic wildcard type.(ìîÜ’ûÿÿÿÿ
+@squid:S1148ú"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+csquid:S3027°"KPut single-quotes around '\"' to use the faster "lastIndexOf(char)" method.(–­ñ€
+osquid:S00117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øò÷æıÿÿÿÿ
+3squid:S1643*"Use a StringBuilder instead.(•ÂÙº
+[squid:S1155­">Use isEmpty() to check whether the collection is empty or not.(Ò˜šîüÿÿÿÿ
+Usquid:S1197Ç"8Move the array designator from the variable to the type.(ï²ûÿÿÿÿ
+vsquid:S2293ä"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ
+osquid:S00117Ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ä¨™şÿÿÿÿ
+9squid:S1643¶"Use a StringBuilder instead.(Õç¿¡üÿÿÿÿ
+vsquid:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ
+@squid:S1148ë"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+>squid:S1452¡"&Remove usage of generic wildcard type.(Œæÿí
+4squid:S1643—"Use a StringBuilder instead.(Ø¾Ğ˜
+4squid:S1643Ï"Use a StringBuilder instead.(ë«è·
+P
+squid:S106Õ"9Replace this use of System.out or System.err by a logger.(¯ÚˆÏ
+dsquid:S3027¯"GPut single-quotes around '\"' to use the faster "indexOf(char)" method.(âÔğäúÿÿÿÿ
+jsquid:S00117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éî‘í
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(Íë¹’ûÿÿÿÿ
+esquid:S4201z"IRemove this unnecessary null check; "instanceof" returns false for nulls.(À•º»úÿÿÿÿ

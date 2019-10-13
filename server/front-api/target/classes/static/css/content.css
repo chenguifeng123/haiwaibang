@@ -1,0 +1,117 @@
+.article-panel-title{
+    color: #666;
+    text-align: center;
+}
+
+.main-page{
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #faf7f1;
+}
+
+.header-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #271c1c;
+    line-height: 24px;
+    display: block;
+    /*margin-bottom: 22px;*/
+}
+
+.header-small-tille{
+    padding: 10px;
+}
+
+.header-author{
+    color: #be9d67;
+}
+
+.header-time{
+    font-size: 14px;
+    color: #725533;
+    text-indent: 18px;
+    float: right;
+}
+
+.article-panel{
+    border-right:1px solid #725533;
+}
+
+.recommend-list header{
+    width: 100%;
+    height: 52px;
+    background: url(/img/line.jpg) repeat-x left bottom;
+}
+
+.html-contents{
+    border-top:1px solid #acabab;
+}
+
+.oen-element{
+    box-sizing: border-box;
+    border: 1px solid #EFE1CA;
+    padding: 20px 15px;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.oen-element .one-element-content-panel{
+    margin-left: 40px;
+}
+
+.oen-element img{
+    width: 320px;
+    height: 180px;
+}
+
+.oen-element .one-element-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.oen-element .one-element-sub-title{
+    font-size: 14px;
+    color: #acabab;
+    box-sizing: border-box;
+    margin-right: 33px;
+}
+
+.oen-element .one-element-content{
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical;  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 3; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+    margin-bottom: 20px;
+}
+
+.oen-element .one-element-content-panel .more{
+    bottom: 0;
+    left: 0;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #DCB777;
+    display: block;
+    border: 1px solid #DCB777;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.list-page{
+    text-align: right;
+}
+
+.recommend-list li{
+    list-style-type: decimal;
+}

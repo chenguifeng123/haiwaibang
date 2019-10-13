@@ -1,0 +1,20 @@
+
+bsquid:S1871"MThis branch's code block is the same as the block for the branch on line 226.(­­ö¥
+asquid:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(´Ö”
+bsquid:S2095"HUse try-with-resources or close this "FileReader" in a "finally" clause.(Ğ½¶„úÿÿÿÿ
+fsquid:S2095"QUse try-with-resources or close this "BufferedInputStream" in a "finally" clause.(¦É°
+bsquid:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(²¤Ü§üÿÿÿÿ
+lsquid:S2095"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(÷ôÚüÿÿÿÿ
+hsquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Ø÷ı‚şÿÿÿÿ
+bsquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ˆàş
+fsquid:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ì„”¾ıÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ÷ı·øÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ıšÃƒ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(©ƒ´L
+asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¸ùÑâÿÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

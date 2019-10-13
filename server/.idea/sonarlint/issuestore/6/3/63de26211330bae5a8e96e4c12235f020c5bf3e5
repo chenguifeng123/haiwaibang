@@ -1,0 +1,4 @@
+
+N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(áÆ«Ë
+[squid:S1126"AReplace this if-then-else statement by a single return statement.(ÏüÒéıÿÿÿÿ
+]squid:S2259"CA "NullPointerException" could be thrown; "state" is nullable here.(È¬ü®úÿÿÿÿ

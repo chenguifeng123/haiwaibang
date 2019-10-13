@@ -1,0 +1,7 @@
+
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(éæÑƒ8áàİ-
+Ksquid:S1604u"(Make this anonymous inner class a lambda(¤‡Ô±ÿÿÿÿÿ8ºÿîİ-
+vsquid:S1171B"YMove the contents of this initializer to a standard constructor or to field initializers.(É“%8ÊÆó¾Š-
+Isquid:S3599B",Use another way to initialize this instance.(É“%8ÊÆó¾Š-
+€squid:S1488E"]Immediately return this expression instead of assigning it to the temporary variable "token".(ş½È’øÿÿÿÿ8øİª”‰-
+Fsquid:S1604h"(Make this anonymous inner class a lambda(î‘š 8‡îêİ-

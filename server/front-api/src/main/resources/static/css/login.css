@@ -1,0 +1,19 @@
+.center-panel{
+    text-align: center;
+}
+
+.login-form{
+    width:400px;
+    margin:20px auto;
+
+    /* border:2px solid darkslategray; */
+    box-shadow: darkgrey 10px 10px 30px 5px ;//边框阴影
+}
+
+.submit-btn{
+    width: 100%;
+}
+
+.input-group{
+    margin-bottom: 10px;
+}

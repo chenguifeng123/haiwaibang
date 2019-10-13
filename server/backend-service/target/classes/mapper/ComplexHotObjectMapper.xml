@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haiwaibang.server.dao.multi.ComplexHotObjectMapper" >
+  <resultMap id="multiHotCountry" type="com.haiwaibang.model.po.multi.ComplexHotCountry" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="country_id" property="countryId" jdbcType="INTEGER" />
+    <result column="image_id" property="imageId" jdbcType="INTEGER" />
+    <result column="aurl" property="url" jdbcType="VARCHAR" />
+    <result column="show_type" property="showType" jdbcType="INTEGER" />
+    <association property="country" javaType="com.haiwaibang.model.po.Country">
+      <id column="cid" property="id" jdbcType="INTEGER" />
+      <result column="cname" property="name" jdbcType="VARCHAR" />
+      <result column="name_zh" property="nameZh" jdbcType="VARCHAR" />
+      <result column="continent_id" property="continentId" jdbcType="INTEGER" />
+      <result column="continent_name" property="continentName" jdbcType="VARCHAR" />
+      <result column="detail" property="detail" jdbcType="VARCHAR" />
+    </association>
+    <association property="image" javaType="com.haiwaibang.model.po.Image">
+      <id column="iid" property="id" jdbcType="INTEGER" />
+      <result column="iname" property="name" jdbcType="VARCHAR" />
+      <result column="iurl" property="url" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <select id="listHotCountry" resultMap="multiHotCountry">
+    select a.id, country_id, a.image_id, a.url as aurl, show_type, b.id as cid, b.name as cname, name_zh,
+    continent_id, continent_name, detail, c.id as iid, c.name as iname, c.url as iurl
+    from hot_country a, country b, image c where a.country_id = b.id and a.image_id = c.id
+    <if test="_parameter != null" >
+      and show_type = #{showType,jdbcType=INTEGER}
+    </if>
+  </select>
+
+
+  <resultMap id="multiHotProject" type="com.haiwaibang.model.po.multi.ComplexHotProject" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="project_id" property="projectId" jdbcType="INTEGER" />
+    <result column="image_id" property="imageId" jdbcType="INTEGER" />
+    <result column="aurl" property="url" jdbcType="VARCHAR" />
+    <association property="project" javaType="com.haiwaibang.model.po.Project">
+      <id column="bid" property="id" jdbcType="INTEGER" />
+      <result column="bname" property="name" jdbcType="VARCHAR" />
+      <result column="name_zh" property="nameZh" jdbcType="VARCHAR" />
+      <result column="detail" property="detail" jdbcType="VARCHAR" />
+      <result column="country_id" property="countryId" jdbcType="INTEGER" />
+      <result column="type" property="type" jdbcType="INTEGER" />
+      <result column="type_name" property="typeName" jdbcType="VARCHAR" />
+    </association>
+    <association property="image" javaType="com.haiwaibang.model.po.Image">
+      <id column="iid" property="id" jdbcType="INTEGER" />
+      <result column="iname" property="name" jdbcType="VARCHAR" />
+      <result column="iurl" property="url" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+
+  <select id="listHotProject" resultMap="multiHotProject">
+    select a.id, project_id, a.image_id, a.url as aurl, b.id as bid, b.name as bname, name_zh, detail,
+    country_id, type, type_name, c.id as iid, c.name as iname, c.url as iurl
+    from hot_project a, project b, image c where a.project_id = b.id and a.image_id = c.id
+  </select>
+</mapper>

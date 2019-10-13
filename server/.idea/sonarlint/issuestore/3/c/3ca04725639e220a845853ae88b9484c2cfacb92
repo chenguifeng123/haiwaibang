@@ -1,0 +1,7 @@
+
+Gsquid:S2786")Remove this redundant "static" qualifier.(ŒÁ¶8îêØ˜ˆ-
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÙˆÁ±8îêØ˜ˆ-
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÙˆÁ±8îêØ˜ˆ-
+ysquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÙˆÁ±8îêØ˜ˆ-
+]squid:S1118":Add a private constructor to hide the implicit public one.(‹Şßìşÿÿÿÿ8îêØ˜ˆ-
+\squid:S1155">Use isEmpty() to check whether the collection is empty or not.(Šµ®å8îêØ˜ˆ-
